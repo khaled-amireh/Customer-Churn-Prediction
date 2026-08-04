@@ -1,16 +1,18 @@
 # Customer Churn Prediction using Logistic Regression
 
-Machine Learning classification project that predicts whether a customer is likely to churn based on customer behavior and subscription information.
+A machine learning classification project that predicts customer churn using Logistic Regression. The project covers the complete machine learning pipeline, including data preprocessing, model training, and performance evaluation.
 
 ---
 
-## Overview
+# Overview
 
-Customer churn prediction helps businesses identify customers who are likely to leave a service. In this project, I built a complete machine learning pipeline using Logistic Regression, starting from data preprocessing and ending with model evaluation.
+Customer churn prediction helps businesses identify customers who are likely to leave a service. Early detection allows companies to improve customer retention and reduce revenue loss.
+
+In this project, I built a complete classification pipeline using Logistic Regression with Scikit-learn, starting from raw data preprocessing and ending with model evaluation.
 
 ---
 
-## Dataset
+# Dataset
 
 The dataset contains customer information such as:
 
@@ -25,72 +27,77 @@ The dataset contains customer information such as:
 - Total Spend
 - Last Interaction
 
-Target Variable:
+### Target Variable
 
-- **Churn**
-  - 0 → Customer stays
-  - 1 → Customer leaves
+**Churn**
+
+- **0** → Customer Stays
+- **1** → Customer Leaves
 
 ---
 
-## Project Workflow
+# Technologies Used
 
-### 1. Import Libraries
-
-Imported the required Python libraries for:
-
-- Data manipulation
-- Data visualization
-- Data preprocessing
-- Model training
-- Model evaluation
-
-Libraries used:
-
+- Python
 - NumPy
 - Pandas
 - Matplotlib
 - Scikit-learn
+- Jupyter Notebook
 
 ---
 
-### 2. Load the Dataset
+# Project Workflow
 
-Loaded the dataset using Pandas and separated the features from the target variable.
+## 1. Import Libraries
 
-Also removed the **CustomerID** column because it is only an identifier and does not provide useful information for prediction.
+Imported the required libraries for:
+
+- Data manipulation
+- Data preprocessing
+- Model training
+- Model evaluation
+- Data visualization
 
 ---
 
-### 3. Exploratory Data Analysis (EDA)
+## 2. Load the Dataset
 
-Performed a quick exploration of the dataset by checking:
+Loaded the dataset using Pandas and separated the input features from the target variable.
+
+The **CustomerID** column was removed because it is only an identifier and does not contribute to the prediction process.
+
+---
+
+## 3. Exploratory Data Analysis (EDA)
+
+Performed a basic exploration of the dataset by checking:
 
 - Dataset information
 - Data types
 - Statistical summary
 - Missing values
 
-This step helps understand the data before preprocessing.
+This step helped verify that the dataset was clean before preprocessing.
 
 ---
 
-### 4. Split the Dataset
+## 4. Train-Test Split
 
-The dataset was split into:
+The dataset was divided into:
 
-- 80% Training Set
-- 20% Testing Set
+- 80% Training Data
+- 20% Testing Data
 
-The split was done before preprocessing to prevent data leakage.
+Splitting the data before preprocessing helps prevent data leakage.
 
 ---
 
-### 5. Data Preprocessing
+## 5. Data Preprocessing
 
-#### One-Hot Encoding
+### One-Hot Encoding
 
-Categorical features were transformed using **OneHotEncoder**.
+Applied **OneHotEncoder** to transform categorical features into numerical values.
 
 Encoded columns:
 
@@ -98,90 +105,116 @@ Encoded columns:
 - Subscription Type
 - Contract Length
 
-One-Hot Encoding converts categorical values into numerical binary features that can be used by machine learning algorithms.
+---
+
+### Feature Scaling
+
+Applied **StandardScaler** to the numerical features.
+
+Feature scaling improves the optimization process of Logistic Regression by placing numerical features on a similar scale.
 
 ---
 
-### 6. Feature Scaling
-
-Applied **StandardScaler** on the numerical features.
-
-Feature scaling was performed because Logistic Regression is a distance-based optimization algorithm and performs better when numerical features are on a similar scale.
-
----
-
-### 7. Train the Model
+## 6. Model Training
 
 Trained a **Logistic Regression** classifier using the training dataset.
 
 ---
 
-### 8. Make Predictions
+## 7. Prediction
 
-Predicted customer churn on the testing dataset.
+Used the trained model to predict customer churn on the testing dataset.
 
 ---
 
-### 9. Model Evaluation
+## 8. Model Evaluation
 
-Evaluated the model using:
+The model was evaluated using:
 
 - Confusion Matrix
 - Accuracy Score
 - Classification Report
 
-Final Accuracy:
+---
 
-**83.16%**
+# Results
+
+### Model Accuracy
+
+**Accuracy:** **83.16%**
+
+### Confusion Matrix
+
+![Confusion Matrix](Images/confusion_matrix.png)
+
+### Classification Report
+
+| Metric | Value |
+|---------|------:|
+| Accuracy | **83.16%** |
+| Precision | **0.83** |
+| Recall | **0.83** |
+| F1-Score | **0.83** |
+
+The model achieved balanced performance across both classes, indicating that it can classify churn and non-churn customers with consistent performance.
 
 ---
 
-## Technologies Used
+# Project Structure
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- Jupyter Notebook
-
----
-
-## Project Structure
-
-```
-Customer_Churn_Prediction/
+```text
+Customer-Churn-Prediction/
+│
+├── Images/
+│   └── confusion_matrix.png
 │
 ├── customer_churn_prediction.ipynb
+├── customer_churn_prediction.py
 ├── customer_churn_dataset-testing-master.csv
 ├── README.md
+├── requirements.txt
+└── LICENSE
 ```
 
 ---
 
-## Results
+# Installation
 
-The Logistic Regression model achieved an accuracy of **83.16%** on the test set.
+```bash
+git clone https://github.com/YOUR_USERNAME/customer-churn-prediction.git
 
-Evaluation metrics included:
+cd customer-churn-prediction
 
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- Confusion Matrix
-
-These metrics provide a better understanding of the model's performance than relying on accuracy alone.
+pip install -r requirements.txt
+```
 
 ---
 
-## Future Improvements
+# Running the Project
 
-Possible improvements for this project include:
+Run the notebook:
 
-- Trying different classification algorithms
+```bash
+jupyter notebook customer_churn_prediction.ipynb
+```
+
+or run the Python script:
+
+```bash
+python customer_churn_prediction.py
+```
+
+---
+
+# Future Improvements
+
+Possible improvements include:
+
 - Hyperparameter tuning
 - Feature selection
 - Cross-validation
 - ROC Curve and AUC Score
 - Precision-Recall Curve
+- Comparing Logistic Regression with other classification algorithms
+
+---
