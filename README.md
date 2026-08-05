@@ -224,5 +224,6 @@ Possible improvements include:
 - Precision-Recall Curve
 - Comparing Logistic Regression with other classification algorithms
 - Model deployment using Flask or Streamlit
+- Handling class imbalance using SMOTE
 
 ---
