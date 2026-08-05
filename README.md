@@ -223,5 +223,6 @@ Possible improvements include:
 - ROC Curve and AUC Score
 - Precision-Recall Curve
 - Comparing Logistic Regression with other classification algorithms
+- Model deployment using Flask or Streamlit
 
 ---
