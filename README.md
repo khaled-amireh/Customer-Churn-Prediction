@@ -225,5 +225,6 @@ Possible improvements include:
 - Comparing Logistic Regression with other classification algorithms
 - Model deployment using Flask or Streamlit
 - Handling class imbalance using SMOTE
+- Building an interactive prediction dashboard
 
 ---
