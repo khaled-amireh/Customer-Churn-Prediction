@@ -1,4 +1,4 @@
-# Customer Churn Prediction using Logistic Regression
+# Customer Churn Prediction
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
 
