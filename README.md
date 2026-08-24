@@ -173,7 +173,7 @@ Customer-Churn-Prediction/
 ├── customer_churn_dataset-testing-master.csv
 ├── README.md
 ├── requirements.txt
-└── LICENSE
+
 ```
 
 ---
