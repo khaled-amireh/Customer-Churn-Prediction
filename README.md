@@ -160,49 +160,6 @@ The model achieved balanced performance across both classes, indicating that it 
 
 ---
 
-# Project Structure
-
-```text
-Customer-Churn-Prediction/
-│
-├── Images/
-
-
-
-
-
-```
-
----
-
-# Installation
-
-```bash
-git clone https://github.com/YOUR_USERNAME/customer-churn-prediction.git
-
-cd customer-churn-prediction
-
-pip install -r requirements.txt
-```
-
----
-
-# Running the Project
-
-Run the notebook:
-
-```bash
-jupyter notebook customer_churn_prediction.ipynb
-```
-
-or run the Python script:
-
-```bash
-python customer_churn_prediction.py
-```
-
----
-
 # Future Improvements
 
 Possible improvements include:
