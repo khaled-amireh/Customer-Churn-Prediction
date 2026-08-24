@@ -172,7 +172,7 @@ Customer-Churn-Prediction/
 ├── customer_churn_prediction.py
 ├── customer_churn_dataset-testing-master.csv
 ├── README.md
-├── requirements.txt
+
 
 ```
 
