@@ -1,12 +1,5 @@
 # Customer Churn Prediction
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
-
-[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange)](https://scikit-learn.org/)
-
-[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple)](https://pandas.pydata.org/)
-
-![Accuracy](https://img.shields.io/badge/Accuracy-83.16%25-brightgreen)
 
 A machine learning classification project that predicts customer churn using Logistic Regression. The project demonstrates a complete machine learning workflow including data preprocessing, feature engineering, model training, prediction, and performance evaluation.
 ---
