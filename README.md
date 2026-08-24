@@ -166,8 +166,7 @@ The model achieved balanced performance across both classes, indicating that it 
 Customer-Churn-Prediction/
 │
 ├── Images/
-│   └── confusion_matrix.png
-│
+
 
 
 
