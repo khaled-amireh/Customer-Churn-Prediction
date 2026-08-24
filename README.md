@@ -168,8 +168,7 @@ Customer-Churn-Prediction/
 ├── Images/
 │   └── confusion_matrix.png
 │
-├── customer_churn_prediction.ipynb
-├── customer_churn_prediction.py
+
 
 
 
