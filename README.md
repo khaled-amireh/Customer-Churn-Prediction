@@ -169,6 +169,5 @@ Possible improvements include:
 - Cross-validation
 - ROC Curve and AUC Score
 - Precision-Recall Curve
-- Comparing Logistic Regression with other classification algorithms
 
 ---
