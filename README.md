@@ -141,7 +141,7 @@ The model achieved **balanced performance across both classes**, indicating it c
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Customer-Churn-Prediction/
