@@ -70,7 +70,7 @@ The dataset contains customer information including:
 
 ---
 
-## 🔄 Project Workflow
+##  Project Workflow
 
 ```mermaid
 flowchart LR
