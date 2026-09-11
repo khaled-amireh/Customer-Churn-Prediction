@@ -1,169 +1,180 @@
-# Customer Churn Prediction
+# 📉 Customer Churn Prediction
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Logistic%20Regression-F7931E?logo=scikit-learn&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-A machine learning classification project that predicts customer churn using Logistic Regression. The project demonstrates a complete machine learning workflow including data preprocessing, feature engineering, model training, prediction, and performance evaluation.
----
-
-# Overview
-
-Customer churn prediction helps businesses identify customers who are likely to leave a service. Early detection allows companies to improve customer retention and reduce revenue loss.
-
-In this project, I built a complete classification pipeline using Logistic Regression with Scikit-learn, starting from raw data preprocessing and ending with model evaluation.
+> A machine learning classification project that predicts customer churn using Logistic Regression — covering the complete workflow from raw data to evaluated model.
 
 ---
 
-# Dataset
+## 📖 Table of Contents
 
-The dataset contains customer information such as:
-
-- Age
-- Gender
-- Subscription Type
-- Contract Length
-- Tenure
-- Usage Frequency
-- Support Calls
-- Payment Delay
-- Total Spend
-- Last Interaction
-
-### Target Variable
-
-**Churn**
-
-- **0** → Customer Stays
-- **1** → Customer Leaves
+- [Overview](#-overview)
+- [Dataset](#-dataset)
+- [Technologies Used](#-technologies-used)
+- [Project Workflow](#-project-workflow)
+- [Results](#-results)
+- [Project Structure](#-project-structure)
+- [How to Run](#-how-to-run)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
 
 ---
 
-# Technologies Used
+## 🎯 Overview
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
-- Jupyter Notebook
+Customer churn prediction helps businesses identify customers who are likely to leave a service. Early detection allows companies to take proactive retention measures and reduce revenue loss.
+
+This project builds a complete classification pipeline using **Logistic Regression** with Scikit-learn — starting from raw data preprocessing and ending with model evaluation.
 
 ---
 
-# Project Workflow
+## 📊 Dataset
 
-## 1. Import Libraries
+The dataset contains customer information including:
 
-Imported the required libraries for:
+| Feature | Description |
+|---|---|
+| `Age` | Customer's age |
+| `Gender` | Customer's gender |
+| `Subscription Type` | Type of subscription plan |
+| `Contract Length` | Duration of the customer's contract |
+| `Tenure` | How long the customer has been with the service |
+| `Usage Frequency` | How often the customer uses the service |
+| `Support Calls` | Number of support calls made |
+| `Payment Delay` | Delay in payments |
+| `Total Spend` | Total amount spent by the customer |
+| `Last Interaction` | Recency of the customer's last interaction |
 
-- Data manipulation
-- Data preprocessing
-- Model training
-- Model evaluation
-- Data visualization
+### Target Variable — `Churn`
 
----
-
-## 2. Load the Dataset
-
-Loaded the dataset using Pandas and separated the input features from the target variable.
-
-The **CustomerID** column was removed because it is only an identifier and does not contribute to the prediction process.
-
----
-
-## 3. Exploratory Data Analysis (EDA)
-
-Performed a basic exploration of the dataset by checking:
-
-- Dataset information
-- Data types
-- Statistical summary
-- Missing values
-
-This step helped verify that the dataset was clean before preprocessing.
+| Value | Meaning |
+|---|---|
+| `0` | Customer stays |
+| `1` | Customer leaves |
 
 ---
 
-## 4. Train-Test Split
+## 🛠️ Technologies Used
 
-The dataset was divided into:
-
-- 80% Training Data
-- 20% Testing Data
-
-Splitting the data before preprocessing helps prevent data leakage.
-
----
-
-## 5. Data Preprocessing
-
-### One-Hot Encoding
-
-Applied **OneHotEncoder** to transform categorical features into numerical values.
-
-Encoded columns:
-
-- Gender
-- Subscription Type
-- Contract Length
+| Category | Tools |
+|---|---|
+| Language | Python |
+| Numerical Computing | NumPy |
+| Data Handling | Pandas |
+| Visualization | Matplotlib |
+| Machine Learning | Scikit-learn |
+| Environment | Jupyter Notebook |
 
 ---
 
-### Feature Scaling
+## 🔄 Project Workflow
 
-Applied **StandardScaler** to the numerical features.
+```mermaid
+flowchart LR
+    A[Import Libraries] --> B[Load Dataset]
+    B --> C[Exploratory Data Analysis]
+    C --> D[Train-Test Split]
+    D --> E[One-Hot Encoding]
+    E --> F[Feature Scaling]
+    F --> G[Train Logistic Regression]
+    G --> H[Prediction]
+    H --> I[Model Evaluation]
+```
 
-Feature scaling improves the optimization process of Logistic Regression by placing numerical features on a similar scale.
+### 1. Import Libraries
+Imported the required libraries for data manipulation, preprocessing, model training, evaluation, and visualization.
+
+### 2. Load the Dataset
+Loaded the dataset with Pandas and separated the input features from the target variable. The `CustomerID` column was dropped, since it's only an identifier and carries no predictive value.
+
+### 3. Exploratory Data Analysis (EDA)
+Explored the dataset structure, data types, statistical summary, and missing values to confirm the data was clean before preprocessing.
+
+### 4. Train-Test Split
+Split the dataset into **80% training** and **20% testing** data *before* preprocessing, to prevent data leakage.
+
+### 5. Data Preprocessing
+
+**One-Hot Encoding** — applied `OneHotEncoder` to convert categorical features into numerical form:
+- `Gender`
+- `Subscription Type`
+- `Contract Length`
+
+**Feature Scaling** — applied `StandardScaler` to numerical features, improving the optimization behavior of Logistic Regression by putting features on a comparable scale.
+
+### 6. Model Training
+Trained a **Logistic Regression** classifier on the preprocessed training data.
+
+### 7. Prediction
+Used the trained model to predict churn on the held-out testing set.
+
+### 8. Model Evaluation
+Evaluated performance using a Confusion Matrix, Accuracy Score, and Classification Report.
 
 ---
 
-## 6. Model Training
-
-Trained a **Logistic Regression** classifier using the training dataset.
-
----
-
-## 7. Prediction
-
-Used the trained model to predict customer churn on the testing dataset.
-
----
-
-## 8. Model Evaluation
-
-The model was evaluated using:
-
-- Confusion Matrix
-- Accuracy Score
-- Classification Report
-
----
-
-# Results
+## ✅ Results
 
 ### Model Accuracy
 
-**Accuracy:** **83.16%**
+**Accuracy: 83.16%**
 
 ### Confusion Matrix
 
-![Confusion Matrix](Images/confusion_matrix.png)
+<p align="center">
+  <img src="Images/confusion_matrix.png" alt="Confusion Matrix" width="500"/>
+</p>
 
 ### Classification Report
 
 | Metric | Value |
-|---------|------:|
+|---|---:|
 | Accuracy | **83.16%** |
 | Precision | **0.83** |
 | Recall | **0.83** |
 | F1-Score | **0.83** |
 
-The model achieved balanced performance across both classes, indicating that it can classify churn and non-churn customers with consistent performance.
+The model achieved **balanced performance across both classes**, indicating it can classify churn and non-churn customers with consistent precision and recall — rather than skewing toward one class.
 
 ---
 
-# Future Improvements
+## 📁 Project Structure
 
-Possible improvements include:
+```
+Customer-Churn-Prediction/
+│
+├── Images/
+│   └── confusion_matrix.png
+├── data/
+│   └── customer_churn.csv
+├── notebooks/
+│   └── customer_churn_prediction.ipynb
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## ▶️ How to Run
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/khaled-amireh/Customer-Churn-Prediction.git
+cd Customer-Churn-Prediction
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Launch the notebook
+jupyter notebook notebooks/customer_churn_prediction.ipynb
+```
+
+---
+
+## 🚀 Future Improvements
 
 - Hyperparameter tuning
 - Feature selection
@@ -172,3 +183,8 @@ Possible improvements include:
 - Precision-Recall Curve
 
 ---
+
+## 👤 Author
+
+**Khaled Amireh**
+[GitHub](https://github.com/khaled-amireh)
