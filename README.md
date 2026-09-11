@@ -23,7 +23,7 @@
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 Customer churn prediction helps businesses identify customers who are likely to leave a service. Early detection allows companies to take proactive retention measures and reduce revenue loss.
 
