@@ -1,4 +1,4 @@
-# 📉 Customer Churn Prediction
+#  Customer Churn Prediction
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Logistic%20Regression-F7931E?logo=scikit-learn&logoColor=white)
