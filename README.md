@@ -31,7 +31,7 @@ This project builds a complete classification pipeline using **Logistic Regressi
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The dataset contains customer information including:
 
