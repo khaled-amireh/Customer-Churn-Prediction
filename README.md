@@ -57,7 +57,7 @@ The dataset contains customer information including:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Category | Tools |
 |---|---|
