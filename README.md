@@ -158,7 +158,7 @@ Customer-Churn-Prediction/
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ```bash
 # 1. Clone the repository
