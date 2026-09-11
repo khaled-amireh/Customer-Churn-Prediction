@@ -174,7 +174,7 @@ jupyter notebook notebooks/customer_churn_prediction.ipynb
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Hyperparameter tuning
 - Feature selection
