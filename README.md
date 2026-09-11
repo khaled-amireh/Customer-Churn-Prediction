@@ -184,7 +184,6 @@ jupyter notebook notebooks/customer_churn_prediction.ipynb
 
 ---
 
-## 👤 Author
+##  Author
 
 **Khaled Amireh**
-[GitHub](https://github.com/khaled-amireh)
