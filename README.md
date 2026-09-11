@@ -116,7 +116,7 @@ Evaluated performance using a Confusion Matrix, Accuracy Score, and Classificati
 
 ---
 
-## ✅ Results
+##  Results
 
 ### Model Accuracy
 
