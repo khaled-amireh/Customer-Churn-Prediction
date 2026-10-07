@@ -27,9 +27,9 @@
 - [ Project Workflow](#-project-workflow)
 - [ Results](#-results)
 - [ Project Structure](#-project-structure)
-- [▶️ How to Run](#️-how-to-run)
-- [🚀 Future Improvements](#-future-improvements)
-- [👤 Author](#-author)
+- [ How to Run](#️-how-to-run)
+- [ Future Improvements](#-future-improvements)
+- [ Author](#-author)
 
 ---
 
