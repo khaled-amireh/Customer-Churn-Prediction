@@ -33,7 +33,7 @@
 
 ---
 
-## 🧠 Overview
+##  Overview
 
 > **In simple terms:** this project teaches a computer to look at a customer's info (how long they've been subscribed, how often they use the service, how many times they called support, etc.) and predict one thing — **will they stay, or will they leave?**
 
@@ -42,7 +42,7 @@ Losing a customer is expensive. It's almost always cheaper to **keep** a custome
 That's exactly what this model does. It was built using **Logistic Regression**, a simple but powerful algorithm that's great at answering yes/no questions like *"will this customer churn?"*
 
 ```
-📥 Raw customer data  →  🧹 Clean & prepare it  →  🤖 Train the model  →  📊 See how accurate it is
+ Raw customer data  →   Clean & prepare it  →  🤖 Train the model  →  📊 See how accurate it is
 ```
 
 ---
