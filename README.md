@@ -42,12 +42,12 @@ Losing a customer is expensive. It's almost always cheaper to **keep** a custome
 That's exactly what this model does. It was built using **Logistic Regression**, a simple but powerful algorithm that's great at answering yes/no questions like *"will this customer churn?"*
 
 ```
- Raw customer data  →   Clean & prepare it  →  🤖 Train the model  →  📊 See how accurate it is
+ Raw customer data  →   Clean & prepare it  →   Train the model  →   See how accurate it is
 ```
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 The model learns from everyday customer information — the kind of data most subscription businesses already have:
 
