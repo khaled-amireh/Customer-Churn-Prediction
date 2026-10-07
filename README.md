@@ -19,11 +19,11 @@
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
-- [🧠 Overview](#-overview)
-- [📂 Dataset](#-dataset)
-- [🧰 Technologies Used](#-technologies-used)
+- [ Overview](#-overview)
+- [ Dataset](#-dataset)
+- [ Technologies Used](#-technologies-used)
 - [🔄 Project Workflow](#-project-workflow)
 - [📊 Results](#-results)
 - [📁 Project Structure](#-project-structure)
