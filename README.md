@@ -96,10 +96,10 @@ flowchart LR
     B --> C[ Explore the Data]
     C --> D[ Train-Test Split]
     D --> E[ One-Hot Encoding]
-    E --> F[📏 Feature Scaling]
-    F --> G[🤖 Train the Model]
-    G --> H[🔮 Make Predictions]
-    H --> I[✅ Evaluate Results]
+    E --> F[ Feature Scaling]
+    F --> G[ Train the Model]
+    G --> H[ Make Predictions]
+    H --> I[ Evaluate Results]
 ```
 
 ### 1. 📥 Import Libraries
