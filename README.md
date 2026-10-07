@@ -102,19 +102,19 @@ flowchart LR
     H --> I[ Evaluate Results]
 ```
 
-### 1. 📥 Import Libraries
+### 1.  Import Libraries
 Brought in the tools needed to handle data, build the model, and draw charts.
 
-### 2. 📂 Load the Dataset
+### 2.  Load the Dataset
 Loaded the data and separated it into **"the clues"** (features) and **"the answer"** (`Churn`). The `CustomerID` column was dropped since it's just a label, not a clue.
 
-### 3. 🔍 Explore the Data (EDA)
+### 3.  Explore the Data (EDA)
 Took a first look at the data — checked its shape, types, and whether anything was missing — to make sure it was clean before using it.
 
-### 4. ✂️ Train-Test Split
+### 4.  Train-Test Split
 Split the data into **80% for teaching the model** and **20% for testing it** — and did this *before* any other processing. This way, the model never "peeks" at the test answers while learning. Think of it like studying from one set of practice questions and then taking an exam with *different* questions.
 
-### 5. 🔢 + 📏 Prepare the Data
+### 5.  + 📏 Prepare the Data
 
 **One-Hot Encoding** turns text categories (like `Gender` or `Subscription Type`) into numbers the model can actually understand, since computers can't do math on words.
 
