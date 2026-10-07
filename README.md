@@ -79,7 +79,7 @@ The model learns from everyday customer information — the kind of data most su
 
 | Category | Tools |
 |---|---|
-| Language | 🐍 Python |
+| Language |  Python |
 | Numbers & Math | NumPy |
 | Data Handling | Pandas |
 | Charts | Matplotlib |
@@ -88,14 +88,14 @@ The model learns from everyday customer information — the kind of data most su
 
 ---
 
-## 🔄 Project Workflow
+##  Project Workflow
 
 ```mermaid
 flowchart LR
-    A[📥 Import Libraries] --> B[📂 Load Dataset]
-    B --> C[🔍 Explore the Data]
-    C --> D[✂️ Train-Test Split]
-    D --> E[🔢 One-Hot Encoding]
+    A[ Import Libraries] --> B[ Load Dataset]
+    B --> C[ Explore the Data]
+    C --> D[ Train-Test Split]
+    D --> E[ One-Hot Encoding]
     E --> F[📏 Feature Scaling]
     F --> G[🤖 Train the Model]
     G --> H[🔮 Make Predictions]
