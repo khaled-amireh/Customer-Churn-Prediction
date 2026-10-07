@@ -131,11 +131,11 @@ Checked how good those predictions actually were, using a Confusion Matrix, Accu
 
 ---
 
-## 📊 Results
+##  Results
 
 <div align="center">
 
-### 🎯 Accuracy: **83.16%**
+###  Accuracy: **83.16%**
 
 *Out of every 100 customers, the model correctly predicted stay-or-leave for about 83 of them.*
 
@@ -156,11 +156,11 @@ Checked how good those predictions actually were, using a Confusion Matrix, Accu
 | Recall | **0.83** | Of all customers who *actually* churned, it caught 83% of them |
 | F1-Score | **0.83** | A balanced score combining Precision and Recall |
 
-> ✅ **Why this is good:** all three scores landed at the same number (0.83). That means the model isn't just "cheating" by guessing the most common outcome — it's genuinely good at spotting *both* customers who stay **and** customers who leave.
+>  **Why this is good:** all three scores landed at the same number (0.83). That means the model isn't just "cheating" by guessing the most common outcome — it's genuinely good at spotting *both* customers who stay **and** customers who leave.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Customer-Churn-Prediction/
@@ -177,7 +177,7 @@ Customer-Churn-Prediction/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 # 1. Clone the repository
@@ -193,7 +193,7 @@ jupyter notebook notebooks/customer_churn_prediction.ipynb
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - [ ] Hyperparameter tuning
 - [ ] Feature selection
@@ -203,7 +203,7 @@ jupyter notebook notebooks/customer_churn_prediction.ipynb
 
 ---
 
-## 👤 Author
+##  Author
 
 <p align="center">
   <b>Khaled Amireh</b><br/>
