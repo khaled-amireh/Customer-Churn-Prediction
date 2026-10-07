@@ -114,19 +114,19 @@ Took a first look at the data — checked its shape, types, and whether anything
 ### 4.  Train-Test Split
 Split the data into **80% for teaching the model** and **20% for testing it** — and did this *before* any other processing. This way, the model never "peeks" at the test answers while learning. Think of it like studying from one set of practice questions and then taking an exam with *different* questions.
 
-### 5.  + 📏 Prepare the Data
+### 5.  +  Prepare the Data
 
 **One-Hot Encoding** turns text categories (like `Gender` or `Subscription Type`) into numbers the model can actually understand, since computers can't do math on words.
 
 **Feature Scaling** puts all the numeric features on the same scale — so a feature like `Total Spend` (which can be in the thousands) doesn't unfairly outweigh a feature like `Support Calls` (which might just be 0–5) when the model is learning.
 
-### 6. 🤖 Train the Model
+### 6.  Train the Model
 Fed the training data into a **Logistic Regression** model and let it learn the patterns that separate customers who stay from customers who leave.
 
-### 7. 🔮 Make Predictions
+### 7.  Make Predictions
 Used the trained model to predict churn for customers it had **never seen before** — the test set.
 
-### 8. ✅ Evaluate the Model
+### 8.  Evaluate the Model
 Checked how good those predictions actually were, using a Confusion Matrix, Accuracy Score, and Classification Report.
 
 ---
