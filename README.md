@@ -68,14 +68,14 @@ The model learns from everyday customer information — the kind of data most su
 
 | Value | Meaning |
 |:---:|---|
-| `0` | ✅ Customer stays |
-| `1` | ❌ Customer leaves |
+| `0` |  Customer stays |
+| `1` |  Customer leaves |
 
 >  The `CustomerID` column was removed — it's just a name tag, not useful information for predicting behavior.
 
 ---
 
-## 🧰 Technologies Used
+##  Technologies Used
 
 | Category | Tools |
 |---|---|
