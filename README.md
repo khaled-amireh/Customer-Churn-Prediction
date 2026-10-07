@@ -64,14 +64,14 @@ The model learns from everyday customer information — the kind of data most su
 | `Total Spend` | Total money spent so far |
 | `Last Interaction` | How recently they were active |
 
-### 🎯 What We're Predicting — `Churn`
+###  What We're Predicting — `Churn`
 
 | Value | Meaning |
 |:---:|---|
 | `0` | ✅ Customer stays |
 | `1` | ❌ Customer leaves |
 
-> 💡 The `CustomerID` column was removed — it's just a name tag, not useful information for predicting behavior.
+>  The `CustomerID` column was removed — it's just a name tag, not useful information for predicting behavior.
 
 ---
 
