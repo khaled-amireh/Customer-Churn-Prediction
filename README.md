@@ -207,7 +207,6 @@ jupyter notebook notebooks/customer_churn_prediction.ipynb
 
 <p align="center">
   <b>Khaled Amireh</b><br/>
-  <a href="https://github.com/khaled-amireh">🔗 GitHub</a>
 </p>
 
 <p align="center">
